@@ -7,6 +7,8 @@
  </head>
  <body id="body">
 
+    {% load staticfiles %}
+
     <script>
         function play() {
           var audio = document.getElementById("audio");
@@ -14,10 +16,10 @@
         }
       </script>
 
-    <audio id="audio" src="caic_krik.mp3"></audio>
+    <audio id="audio" src="{% static 'caic_krik.mp3' %}"></audio>
 
     <h1>26 интересных фактов о птицах</h1>
-    <p><a href="bird_1.jpg">Тут красивая птица, посмотрите</a></p>
+    <p><a href="{% static 'bird_1.jpg' %}">Тут красивая птица, посмотрите</a></p>
     <p>Птицы окружают нас. На свете нет ни одной страны, где их бы не было. Мы не так уж часто задумываемся о них, ведь они так привычны, 
         что глаз их просто не замечает… А напрасно, ведь они — создания поистине удивительные. 
         Ниже вы найдёте подборку интересных фактов о птицах.</p>
